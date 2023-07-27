@@ -13,9 +13,7 @@
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
   "globals": {
     "__namespace": false,
-    "echarts": false,
-    "mapv": false,
-    "DC": false,
+    "SzMap": false,
     "Cesium": false
   },
   "rules": {
