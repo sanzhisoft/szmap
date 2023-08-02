@@ -18,7 +18,6 @@ import terser from '@rollup/plugin-terser'
 import scss from 'rollup-plugin-scss'
 import javascriptObfuscator from 'gulp-javascript-obfuscator'
 import { babel } from '@rollup/plugin-babel'
-import startServer from './server.js'
 import inlineImage from 'esbuild-plugin-inline-image'
 import { glsl } from 'esbuild-plugin-glsl'
 
@@ -130,8 +129,8 @@ async function buildCSS() {
 
 async function buildModules(options) {
   const szMapPath = path.join('src', 'SzMap.js')
-
-  const content = await fse.readFile(path.join('src', 'index.js'), 'utf8')
+  const entry = options.esm ? 'index.mjs' : 'index.js'
+  const content = await fse.readFile(path.join('src', entry), 'utf8')
 
   await fse.ensureFile(szMapPath)
 
@@ -156,7 +155,7 @@ async function buildModules(options) {
   //           .replace('{{__REPOSITORY__}}', packageJson.repository)}
   //   }`
 
-  const exportNamespace = `
+  let exportNamespace = `
         export const __namespace = {
             Cesium: exports.Cesium
         }
@@ -204,6 +203,26 @@ async function buildModules(options) {
         TransformStream: 'null',
       },
       outfile: path.join('dist', 'modules.cjs'),
+    })
+  }
+
+  // Build ESM
+  if (options.esm) {
+    await fse.outputFile(
+      szMapPath,
+      `
+      ${exportVersion}
+      ${content}
+      `,
+      {
+        encoding: 'utf8',
+      }
+    )
+
+    await esbuild.build({
+      ...buildConfig,
+      format: 'esm',
+      outfile: path.join('dist', 'index.mjs'),
     })
   }
 
@@ -317,7 +336,20 @@ async function deleteTempFile(options) {
   }
 }
 
+async function copyFile(source, destination) {
+  fse.copyFile(source, destination, fse.constants.COPYFILE_FICLONE, (err) => {
+    if (err) {
+      console.error('An error occurred: ', err)
+    } else {
+      console.log('File copied successfully!')
+    }
+  })
+}
+
 export const build = gulp.series(
+  () => copyFile('src/namespace/esm.js', 'src/namespace/index.js'),
+  () => buildModules({ esm: true }),
+  () => copyFile('src/namespace/default.js', 'src/namespace/index.js'),
   () => buildNamespace({ node: true }),
   () => buildModules({ node: true }),
   () => combineJs({ node: true }),
@@ -344,15 +376,18 @@ export const buildIIFE = gulp.series(
   copyAssets
 )
 
-export const buildTest = gulp.series(
-  () => buildNamespace({ node: true }),
-  () => buildModules({ node: true }),
-  () => combineJs({ node: true })
-  // buildCSS,
-  // copyAssets
+export const buildESM = gulp.series(
+  () => copyFile('src/namespace/esm.js', 'src/namespace/index.js'),
+  () => buildModules({ esm: true }),
+  () => copyFile('src/namespace/default.js', 'src/namespace/index.js'),
+  buildCSS,
+  copyAssets
 )
 
 export const buildRelease = gulp.series(
+  () => copyFile('src/namespace/esm.js', 'src/namespace/index.js'),
+  () => buildModules({ esm: true }),
+  () => copyFile('src/namespace/default.js', 'src/namespace/index.js'),
   () => buildNamespace({ node: true }),
   () => buildModules({ node: true }),
   () => combineJs({ node: true, obfuscate: true }),
@@ -362,5 +397,3 @@ export const buildRelease = gulp.series(
   buildCSS,
   copyAssets
 )
-
-export const server = gulp.series(startServer)

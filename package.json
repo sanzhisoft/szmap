@@ -1,22 +1,31 @@
 {
   "name": "@sanzhisoft/szmap",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "license": "MIT",
-  "description": "SzMap是基于Cesium进行二次开发的2、3D一体化WebGis应用框架，该框架优化了Cesium的使用并增加了一些附加功能，专为开发者快速构建WebGis应用而设计。",
+  "description": "SzMap是基于Cesium进行二次开发的二、三维一体化WebGis应用框架，该框架优化了Cesium的使用并增加了一些附加功能，专为开发者快速构建WebGis应用而设计。",
   "repository": "",
   "homepage": "",
   "author": "Blackzzc <zzc7400@gmail.com>",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*": [
+      "./*"
+    ]
+  },
   "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "scripts": {
     "build": "rimraf dist && gulp build",
     "build:node": "rimraf dist && gulp buildNode",
     "build:iife": "rimraf dist && gulp buildIIFE",
-    "build:test": "rimraf dist && gulp buildTest",
+    "build:esm": "rimraf dist && gulp buildESM",
     "build:release": "rimraf dist && gulp buildRelease",
     "prepublishOnly": "yarn run build:release",
-    "server": "gulp server",
-    "dev": "vite",
+    "server": "vite",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
@@ -31,7 +40,7 @@
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-terser": "^0.4.1",
-    "@sanzhisoft/vite-plugin-szmap": "^0.1.0",
+    "@sanzhisoft/vite-plugin-szmap": "^0.1.2",
     "@vicons/ionicons5": "^0.12.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
@@ -46,7 +55,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
-    "express": "^4.18.2",
     "fs-extra": "^11.1.1",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
@@ -54,14 +62,12 @@
     "gulp-javascript-obfuscator": "^1.1.6",
     "javascript-obfuscator": "^4.0.2",
     "naive-ui": "^2.34.4",
-    "portfinder": "^1.0.32",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.0",
     "rollup": "^3.21.0",
     "rollup-plugin-scss": "^4.0.0",
     "sass": "^1.62.1",
     "serve-static": "^1.14.1",
-    "shelljs": "^0.8.5",
     "supercluster": "^8.0.1",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.1",
