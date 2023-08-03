@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /doc.png
+heroImage: /logo.png
 heroText: SzMap 开发文档
 tagline: 基于 Cesium 构建的 WebGis 开发引擎
 actions:

@@ -110,7 +110,7 @@ import '@sanzhisoft/szmap/dist/szmap.min.css'
 
 ### 应用配置
 
-由于 DC 框架将Cesium静态资源默认路径设置为 `./libs/SzMap/resources/`，这样需将 `Cesium` 相关的静态资源文件: `Assets`、`Workers` 、`ThirdParty` 复制到工程的 `libs/SzMap/resources` 目录下以保证三维场景能够正常呈现,也可通过全局函数进行 `Cesium` 相关的静态资源路基设置
+由于 SzMap 框架将Cesium静态资源默认路径设置为 `./libs/SzMap/resources/`，这样需将 `Cesium` 相关的静态资源文件: `Assets`、`Workers` 、`ThirdParty` 复制到工程的 `libs/SzMap/resources` 目录下以保证三维场景能够正常呈现,也可通过全局函数进行 `Cesium` 相关的静态资源路基设置
 
 > `NPM / YARN`
 
@@ -163,8 +163,8 @@ yarn add @sanzhisoft/types -D
 `构建三维场景`
 
 ```js
-DC.ready().then(() => {
-  let viewer = new DC.Viewer('viewer-container')
+SzMap.ready().then(() => {
+  let viewer = new SzMap.Viewer('viewer-container')
 })
 ```
 
@@ -205,11 +205,6 @@ GeoJSON 是一种对各种地理数据结构进行编码的格式，基于 Javas
 
 KML/CZML 是一个 JSON 格式的数据,描述 time-dynamic（时间、动态）图形场景,它描述了线、点、广告牌(标记)、模型、和其他图形原语,并指定他们如何随时间变化。
 
-:::tip
-数据转换可借助于 [CesiumLab](http://www.cesiumlab.com) 或者其他一些转换工具。[查看大图](http://szmap.sanshisoft.com/examples/images/base/data_transform.png)
-:::
-<img src="http://szmap.sanshisoft.com/examples/images/base/data_transform.png" style="width:100%;height:500px">
-
 ### 三维坐标
 
 **`世界坐标(Cartesian3)`**
@@ -226,7 +221,7 @@ KML/CZML 是一个 JSON 格式的数据,描述 time-dynamic（时间、动态）
 
 **`地理坐标(Position)`**
 
-地理坐标系，坐标原点在椭球的质心。`DC扩展`
+地理坐标系，坐标原点在椭球的质心。`SzMap扩展`
 
 经度：参考椭球面上某点的大地子午面与本初子午面间的两面角。东正西负。
 
@@ -239,7 +234,7 @@ KML/CZML 是一个 JSON 格式的数据,描述 time-dynamic（时间、动态）
 浏览器窗口坐标或者鼠标事件中 windowPosition
 
 :::tip
-框架中可以使用 `DC.T` 进行各类坐标的转换
+框架中可以使用 `SzMap.T` 进行各类坐标的转换
 :::
 
 ### 地理坐标系
@@ -263,5 +258,5 @@ BD09 经纬度投影属于百度坐标系，它是在标准经纬度的基础上
 [参考](http://www.rivermap.cn/docs/show-1829.html)
 
 :::tip
-框架中可以使用 `DC.CoordTransform` 进行各类坐标系的转换
+框架中可以使用 `SzMap.CoordTransform` 进行各类坐标系的转换
 :::
