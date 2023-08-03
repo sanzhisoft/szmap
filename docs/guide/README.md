@@ -97,12 +97,12 @@ import '@sanzhisoft/szmap/dist/szmap.min.css'
 
 `CDN`
 
-[下载链接](https://github.com/dvgis/SzMap/releases)
+[下载链接](https://github.com/sanzhisoft/szmap/releases)
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@dvgis/SzMap/dist/dc.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sanzhisoft/szmap/dist/szmap.min.js"></script>
 <link
-  href="https://cdn.jsdelivr.net/npm/@dvgis/SzMap/dist/dc.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sanzhisoft/szmap/dist/szmap.min.css"
   rel="stylesheet"
   type="text/css"
 />
@@ -121,82 +121,32 @@ import '@sanzhisoft/szmap/dist/szmap.min.css'
 
 const path = require('path')
 const CopywebpackPlugin = require('copy-webpack-plugin')
-const dvgisDist = './node_modules/@dvgis'
+const sanzhiDist = './node_modules/@sanzhisoft'
 
 module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       {
-        from: path.join(dvgisDist, 'SzMap/dist/resources'),
-        to: 'libs/SzMap/resources',
+        from: path.join(sanzhiDist, 'szmap/dist/resources'),
+        to: 'libs/szmap/resources',
       },
     ]),
   ],
 }
 ```
 
-`Vue2.x` [工程模板](https://github.com/dvgis/dc-vue)
-
-```js
-// vue.config.js
-
-const path = require('path')
-const CopywebpackPlugin = require('copy-webpack-plugin')
-const dvgisDist = './node_modules/@dvgis'
-
-module.exports = {
-  // 其他配置
-  chainWebpack: (config) => {
-    config.plugin('copy').use(CopywebpackPlugin, [
-      [
-        {
-          from: path.join(dvgisDist, 'SzMap/dist/resources'),
-          to: 'libs/SzMap/resources',
-        },
-      ],
-    ])
-  },
-}
-```
-
-`Vue3.x` [工程模板](https://github.com/dvgis/dc-vue-next)
-
-```js
-// vue.config.js
-
-const path = require('path')
-const CopywebpackPlugin = require('copy-webpack-plugin')
-const dvgisDist = './node_modules/@dvgis'
-
-module.exports = {
-  // 其他配置
-  chainWebpack: (config) => {
-    config.plugin('copy').use(CopywebpackPlugin, [
-      {
-        patterns: [
-          {
-            from: path.join(dvgisDist, 'SzMap/dist/resources'),
-            to: path.join(__dirname, 'dist', 'libs/SzMap/resources'),
-          },
-        ],
-      },
-    ])
-  },
-}
-```
-
 `CDN`
 
-直接通过[网站](https://github.com/dvgis/SzMap/releases)下载当前版本的资源文件
+直接通过[网站](https://github.com/sanzhisoft/szmap/releases)下载当前版本的资源文件
 
 ### 代码提示
 
 通过安装代码提示工具包，能够在开发过程中提示和自动完成框架内部的接口，更好地提高开发效率
 
 ```shell
-npm install @dvgis/types -D
+npm install @sanzhisoft/types -D
 -------------------------
-yarn add @dvgis/types -D
+yarn add @sanzhisoft/types -D
 ```
 
 ### 快速上手
@@ -218,14 +168,14 @@ DC.ready().then(() => {
 })
 ```
 
-`运行效果` [更多示例](http://dc.dvgis.cn/#/examples)
+`运行效果` [更多示例](http://szmap.sanshisoft.com/examples)
 
 
 ## 总架构图
 
-> DC 架构图，建议使用前先熟悉整体架构图，以便能够快速使用。[查看大图](http://dc.dvgis.cn/examples/images/base/dc2.x.png)
+> SzMap 架构图，建议使用前先熟悉整体架构图，以便能够快速使用。[查看大图](http://szmap.sanzhisoft.com/examples/images/base/szmap.png)
 
-<img src="http://dc.dvgis.cn/examples/images/base/dc2.x.png" style="width:100%;height:800px">
+<img src="http://szmap.sanzhisoft.com/examples/images/base/szmap.png" style="width:100%;height:800px">
 
 ## 技术扩展
 
@@ -256,9 +206,9 @@ GeoJSON 是一种对各种地理数据结构进行编码的格式，基于 Javas
 KML/CZML 是一个 JSON 格式的数据,描述 time-dynamic（时间、动态）图形场景,它描述了线、点、广告牌(标记)、模型、和其他图形原语,并指定他们如何随时间变化。
 
 :::tip
-数据转换可借助于 [CesiumLab](http://www.cesiumlab.com) 或者其他一些转换工具。[查看大图](http://dc.dvgis.cn/examples/images/base/data_transform.png)
+数据转换可借助于 [CesiumLab](http://www.cesiumlab.com) 或者其他一些转换工具。[查看大图](http://szmap.sanshisoft.com/examples/images/base/data_transform.png)
 :::
-<img src="http://dc.dvgis.cn/examples/images/base/data_transform.png" style="width:100%;height:500px">
+<img src="http://szmap.sanshisoft.com/examples/images/base/data_transform.png" style="width:100%;height:500px">
 
 ### 三维坐标
 

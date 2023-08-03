@@ -377,7 +377,7 @@ layer.eachOverlay((item) => {
   - 参数
     - `{String} id`：图层唯一标识
     - `{String} url`：数据地址
-    - `{Object} options`：属性配置，详情参考：[GeoJsonDataSource](http://resource.dvgis.cn/cesium-docs/GeoJsonDataSource.html)
+    - `{Object} options`：属性配置，详情参考：[GeoJsonDataSource](http://szmap.sanzhisoft.com/cesium-docs/GeoJsonDataSource.html)
   - 返回值 `geoJsonLayer`
 
 ### methods
@@ -432,7 +432,7 @@ layer.eachOverlay((item) => {
   - 参数
     - `{String} id`：图层唯一标识
     - `{String} url`：数据地址
-    - `{Object} options`：属性配置，详情参考：[GeoJsonDataSource](http://resource.dvgis.cn/cesium-docs/GeoJsonDataSource.html)
+    - `{Object} options`：属性配置，详情参考：[GeoJsonDataSource](http://szmap.sanzhisoft.com/cesium-docs/GeoJsonDataSource.html)
   - 返回值 `topoJsonLayer`
 
 ### methods
@@ -502,7 +502,7 @@ layer.eachOverlay((item) => {
   - 参数
     - `{String} id`：图层唯一标识
     - `{String} url`：数据地址
-    - `{Object} options`：属性配置，详情参考：[CzmlDataSource](http://resource.dvgis.cn/cesium-docs/CzmlDataSource.html)
+    - `{Object} options`：属性配置，详情参考：[CzmlDataSource](http://szmap.sanzhisoft.com/cesium-docs/CzmlDataSource.html)
   - 返回值 `czmlLayer`
 
 ## SzMap.KmlLayer
@@ -535,7 +535,7 @@ layer.eachOverlay((item) => {
   - 参数
     - `{String} id`：图层唯一标识
     - `{String} url`：数据地址
-    - `{Object} options`：属性配置，详情参考：[KmlDataSource](http://resource.dvgis.cn/cesium-docs/KmlDataSource.html)
+    - `{Object} options`：属性配置，详情参考：[KmlDataSource](http://szmap.sanzhisoft.com/cesium-docs/KmlDataSource.html)
   - 返回值 `kmlLayer`
 
 ## SzMap.GpxLayer
@@ -557,7 +557,7 @@ let layer = new SzMap.GpxLayer('id', '**/**.gpx')
   - 参数
     - `{String} id`：图层唯一标识
     - `{String} url`：数据地址
-    - `{Object} options`：属性配置，详情参考：[GpxDataSource](http://resource.dvgis.cn/cesium-docs/GpxDataSource.html)
+    - `{Object} options`：属性配置，详情参考：[GpxDataSource](http://szmap.sanzhisoft.com/cesium-docs/GpxDataSource.html)
   - 返回值 `gpxLayer`
 
 ## SzMap.ClusterLayer

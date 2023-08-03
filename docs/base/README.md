@@ -320,13 +320,13 @@ global.viewer = viewer // 添加到全局变量
 - `{Element} container`：场景容器 **_`readonly`_**
 - `{Element} widgetContainer`：场景组件容器 **_`readonly`_**
 - `{Element} layerContainer`：场景图层容器 **_`readonly`_**
-- `{Object} scene`：场景 **_`readonly`_**，详情参考：[Scene](http://resource.dvgis.cn/cesium-docs/Scene.html)
-- `{Object} camera`：相机 **_`readonly`_**，详情参考：[Camera](http://resource.dvgis.cn/cesium-docs/Scene.html)
+- `{Object} scene`：场景 **_`readonly`_**，详情参考：[Scene](http://szmap.sanzhisoft.com/cesium-docs/Scene.html)
+- `{Object} camera`：相机 **_`readonly`_**，详情参考：[Camera](http://szmap.sanzhisoft.com/cesium-docs/Scene.html)
 - `{Element} canvas`：canvas 节点 **_`readonly`_**
-- `{Object} clock`：时钟，详情参考：[Clock](http://resource.dvgis.cn/cesium-docs/Clock.html)
-- `{Object} dataSources`：数据资源集合，详情参考：[DataSourceCollection](http://resource.dvgis.cn/cesium-docs/DataSourceCollection.html)
-- `{Object} imageryLayers`：瓦片集合，详情参考：[ImageryLayerCollection](http://resource.dvgis.cn/cesium-docs/ImageryLayerCollection.html)
-- `{Object} entities`：实体集合，详情参考：[EntityCollection](http://resource.dvgis.cn/cesium-docs/EntityCollection.html)
+- `{Object} clock`：时钟，详情参考：[Clock](http://szmap.sanzhisoft.com/cesium-docs/Clock.html)
+- `{Object} dataSources`：数据资源集合，详情参考：[DataSourceCollection](http://szmap.sanzhisoft.com/cesium-docs/DataSourceCollection.html)
+- `{Object} imageryLayers`：瓦片集合，详情参考：[ImageryLayerCollection](http://szmap.sanzhisoft.com/cesium-docs/ImageryLayerCollection.html)
+- `{Object} entities`：实体集合，详情参考：[EntityCollection](http://szmap.sanzhisoft.com/cesium-docs/EntityCollection.html)
 - [`{Popup} popup`](#popup)：气泡窗口 **_`readonly`_**
 - [`{ContextMenu} contextMenu`](#contextmenu)：右击弹框 **_`readonly`_**
 - [`{Tooltip} tooltip`](#tooltip)：提示框 **_`readonly`_**
@@ -931,7 +931,7 @@ viewer.loadingMask.enable = true
 
 ## SzMap.SkyBox
 
-> 天空盒，[详情参考](http://resource.dvgis.cn/cesium-docs/SkyBox.html)
+> 天空盒，[详情参考](http://szmap.sanzhisoft.com/cesium-docs/SkyBox.html)
 
 ### example
 
@@ -973,7 +973,7 @@ scene.skyBox = new SzMap.SkyBox({
 
 ## SzMap.GroundSkyBox
 
-> 近地天空盒，[详情参考](http://resource.dvgis.cn/cesium-docs/SkyBox.html)
+> 近地天空盒，[详情参考](http://szmap.sanzhisoft.com/cesium-docs/SkyBox.html)
 
 ### example
 
@@ -1154,7 +1154,7 @@ let red = SzMap.Color.RED
 - `{Color} WHITE`：白色
 - `{Color} GREEN`：绿色
 
-[其他颜色](http://resource.dvgis.cn/cesium-docs/Color.html)
+[其他颜色](http://szmap.sanzhisoft.com/cesium-docs/Color.html)
 
 ## SzMap.TilesetStyle
 
@@ -1172,7 +1172,7 @@ style.color = {
 }
 ```
 
-[详情参考](http://resource.dvgis.cn/cesium-docs/Cesium3DTileStyle.html)
+[详情参考](http://szmap.sanzhisoft.com/cesium-docs/Cesium3DTileStyle.html)
 
 ## SzMap.JulianDate
 
@@ -1198,7 +1198,7 @@ let date = SzMap.JulianDate.now()
     - `{Date} date`：Js 时间
   - 返回值 `date`
 
-[JulianDate](http://resource.dvgis.cn/cesium-docs/JulianDate.html)
+[JulianDate](http://szmap.sanzhisoft.com/cesium-docs/JulianDate.html)
 
 ## SzMap.Rectangle
 
@@ -1210,7 +1210,7 @@ let date = SzMap.JulianDate.now()
 let r = SzMap.Rectangle.fromDegrees(10, 20, 12, 31)
 ```
 
-[详情参考](http://resource.dvgis.cn/cesium-docs/Rectangle.html)
+[详情参考](http://szmap.sanzhisoft.com/cesium-docs/Rectangle.html)
 
 ## SzMap.CallbackProperty
 
@@ -1480,7 +1480,7 @@ let point = SzMap.CoordTransform.BD09ToGCJ02(120, 20)
     - `{Number} count`： 点位数量
   - 返回值 `Array`
 
-> [more](http://resource.dvgis.cn/cesium-docs/Math.html)
+> [more](http://szmap.sanzhisoft.com/cesium-docs/Math.html)
 
 ## SzMap.Util
 

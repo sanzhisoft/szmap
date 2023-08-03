@@ -135,7 +135,7 @@ point.setStyle({
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PointGraphics](/cesium-docs/PointGraphics.html)
+    - `{Object} style`：样式，详情参考：[PointGraphics](http://szmap.sanzhisoft.com/cesium-docs/PointGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -210,7 +210,7 @@ polyline.setStyle({
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PolylineGraphics](/cesium-docs/PolylineGraphics.html)
+    - `{Object} style`：样式，详情参考：[PolylineGraphics](http://szmap.sanzhisoft.com/cesium-docs/PolylineGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -274,7 +274,7 @@ polygon.setStyle({
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PolygonGraphics](/cesium-docs/PolygonGraphics.html)
+    - `{Object} style`：样式，详情参考：[PolygonGraphics](http://szmap.sanzhisoft.com/cesium-docs/PolygonGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -345,7 +345,7 @@ billboard.size = [20, 20]
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[BillboardGraphics](/cesium-docs/BillboardGraphics.html)
+    - `{Object} style`：样式，详情参考：[BillboardGraphics](http://szmap.sanzhisoft.com/cesium-docs/BillboardGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -417,7 +417,7 @@ let Label = new SzMap.Label(position, 'test')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[LabelGraphics](/cesium-docs/LabelGraphics.html)
+    - `{Object} style`：样式，详情参考：[LabelGraphics](http://szmap.sanzhisoft.com/cesium-docs/LabelGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -496,7 +496,7 @@ let circle = new SzMap.Circle(position, 200)
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[EllipseGraphics](/cesium-docs/EllipseGraphics.html)
+    - `{Object} style`：样式，详情参考：[EllipseGraphics](http://szmap.sanzhisoft.com/cesium-docs/EllipseGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -553,7 +553,7 @@ let rectangle = new SzMap.Rect('-90.0,32.0;-94.0,36.0;')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[RectangleGraphics](/cesium-docs/RectangleGraphics.html)
+    - `{Object} style`：样式，详情参考：[RectangleGraphics](http://szmap.sanzhisoft.com/cesium-docs/RectangleGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -610,7 +610,7 @@ let wall = new SzMap.Wall('-90.0,32.0,1000;-94.0,36.0,1000;')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[WallGraphics](/cesium-docs/WallGraphics.html)
+    - `{Object} style`：样式，详情参考：[WallGraphics](http://szmap.sanzhisoft.com/cesium-docs/WallGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -672,7 +672,7 @@ let model = new SzMap.Model(position, '**/**.glb')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[ModelGraphics](/cesium-docs/ModelGraphics.html)
+    - `{Object} style`：样式，详情参考：[ModelGraphics](http://szmap.sanzhisoft.com/cesium-docs/ModelGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -722,7 +722,7 @@ tileset.setPosition(position)
 
   - 参数
     - `{String} url`：模型地址
-    - `{Object} options`：参数设置，详情参考：[Tileset](/cesium-docs/Cesium3DTileset.html)
+    - `{Object} options`：参数设置，详情参考：[Tileset](http://szmap.sanzhisoft.com/cesium-docs/Cesium3DTileset.html)
   - 返回值 `tileset`
 
 ### properties
@@ -914,7 +914,7 @@ let box = new SzMap.Box(position, 20, 30, 40)
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[BoxGraphics](/cesium-docs/BoxGraphics.html)
+    - `{Object} style`：样式，详情参考：[BoxGraphics](http://szmap.sanzhisoft.com/cesium-docs/BoxGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -968,7 +968,7 @@ corridor.setStyle({
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[CorridorGraphics](/cesium-docs/CorridorGraphics.html)
+    - `{Object} style`：样式，详情参考：[CorridorGraphics](http://szmap.sanzhisoft.com/cesium-docs/CorridorGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1039,7 +1039,7 @@ let cylinder = new SzMap.Cylinder(position, 20, 30, 40)
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[CylinderGraphics](/cesium-docs/CylinderGraphics.html)
+    - `{Object} style`：样式，详情参考：[CylinderGraphics](http://szmap.sanzhisoft.com/cesium-docs/CylinderGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1095,7 +1095,7 @@ let ellipse = new SzMap.Ellipse(position, 20, 30)
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[EllipseGraphics](/cesium-docs/EllipseGraphics.html)
+    - `{Object} style`：样式，详情参考：[EllipseGraphics](http://szmap.sanzhisoft.com/cesium-docs/EllipseGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1155,7 +1155,7 @@ let ellipsoid = new SzMap.Ellipsoid(position, { x: 30, y: 30, z: 30 })
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[EllipsoidGraphics](/cesium-docs/EllipsoidGraphics.html)
+    - `{Object} style`：样式，详情参考：[EllipsoidGraphics](http://szmap.sanzhisoft.com/cesium-docs/EllipsoidGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1221,7 +1221,7 @@ let plane = new SzMap.Plane(position, 20, 30, { normal: 'x' })
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PlaneGraphics](/cesium-docs/PlaneGraphics.html)
+    - `{Object} style`：样式，详情参考：[PlaneGraphics](http://szmap.sanzhisoft.com/cesium-docs/PlaneGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1288,7 +1288,7 @@ let polylineVolume = new SzMap.PolylineVolume(
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PolylineVolumeGraphics](/cesium-docs/PolylineVolumeGraphics.html)
+    - `{Object} style`：样式，详情参考：[PolylineVolumeGraphics](http://szmap.sanzhisoft.com/cesium-docs/PolylineVolumeGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1361,7 +1361,7 @@ billboard.size = [20, 20]
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[BillboardGraphics](/cesium-docs/BillboardGraphics.html)
+    - `{Object} style`：样式，详情参考：[BillboardGraphics](http://szmap.sanzhisoft.com/cesium-docs/BillboardGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1434,7 +1434,7 @@ let model = new SzMap.DynamicModel(position, '**/**.glb')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[ModelGraphics](/cesium-docs/ModelGraphics.html)
+    - `{Object} style`：样式，详情参考：[ModelGraphics](http://szmap.sanzhisoft.com/cesium-docs/ModelGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1491,7 +1491,7 @@ billboard.size = [20, 20]
   设置垂直线
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PolylineGraphics](/cesium-docs/PolylineGraphics.html)
+    - `{Object} style`：样式，详情参考：[PolylineGraphics](http://szmap.sanzhisoft.com/cesium-docs/PolylineGraphics.html)
   - 返回值 `this`
 
 - **_setBottomCircle(radius,style,rotateAmount)_**
@@ -1500,7 +1500,7 @@ billboard.size = [20, 20]
 
   - 参数
     - `{Number} radius`：半径
-    - `{Object} style`：样式，详情参考：[EllipseGraphics](/cesium-docs/EllipseGraphics.html)
+    - `{Object} style`：样式，详情参考：[EllipseGraphics](http://szmap.sanzhisoft.com/cesium-docs/EllipseGraphics.html)
     - `{Number} rotateAmount`：旋转量
   - 返回值 `this`
 
@@ -1509,7 +1509,7 @@ billboard.size = [20, 20]
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[BillboardGraphics](/cesium-docs/BillboardGraphics.html)
+    - `{Object} style`：样式，详情参考：[BillboardGraphics](http://szmap.sanzhisoft.com/cesium-docs/BillboardGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1573,7 +1573,7 @@ let label = new SzMap.CustomLabel(position, 'test')
   设置垂直线
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PolylineGraphics](/cesium-docs/PolylineGraphics.html)
+    - `{Object} style`：样式，详情参考：[PolylineGraphics](http://szmap.sanzhisoft.com/cesium-docs/PolylineGraphics.html)
   - 返回值 `this`
 
 - **_setBottomCircle(radius,style,rotateAmount)_**
@@ -1582,7 +1582,7 @@ let label = new SzMap.CustomLabel(position, 'test')
 
   - 参数
     - `{Number} radius`：半径
-    - `{Object} style`：样式，详情参考：[EllipseGraphics](/cesium-docs/EllipseGraphics.html)
+    - `{Object} style`：样式，详情参考：[EllipseGraphics](http://szmap.sanzhisoft.com/cesium-docs/EllipseGraphics.html)
     - `{Number} rotateAmount`：旋转量
   - 返回值 `this`
 
@@ -1591,7 +1591,7 @@ let label = new SzMap.CustomLabel(position, 'test')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[LabelGraphics](/cesium-docs/LabelGraphics.html)
+    - `{Object} style`：样式，详情参考：[LabelGraphics](http://szmap.sanzhisoft.com/cesium-docs/LabelGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -1827,7 +1827,7 @@ billboard.size = [20, 20]
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[Billboard](/cesium-docs/Billboard.html)
+    - `{Object} style`：样式，详情参考：[Billboard](http://szmap.sanzhisoft.com/cesium-docs/Billboard.html)
   - 返回值 `this`
 
 ```json
@@ -1887,7 +1887,7 @@ billboard.size = [20, 20]
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[Billboard](/cesium-docs/Billboard.html)
+    - `{Object} style`：样式，详情参考：[Billboard](http://szmap.sanzhisoft.com/cesium-docs/Billboard.html)
   - 返回值 `this`
 
 ```json
@@ -2071,7 +2071,7 @@ let Label = new SzMap.LabelPrimitive(position, 'test')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[Label](/cesium-docs/Label.html)
+    - `{Object} style`：样式，详情参考：[Label](http://szmap.sanzhisoft.com/cesium-docs/Label.html)
   - 返回值 `this`
 
 ```json
@@ -2184,7 +2184,7 @@ let label = new SzMap.BounceLabelPrimitive(position, 'test')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[Label](/cesium-docs/Label.html)
+    - `{Object} style`：样式，详情参考：[Label](http://szmap.sanzhisoft.com/cesium-docs/Label.html)
   - 返回值 `this`
 
 ```json
@@ -2261,7 +2261,7 @@ let model = new SzMap.ModelPrimitive(position, '**/**.glb')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[Model](/cesium-docs/Model.html)
+    - `{Object} style`：样式，详情参考：[Model](http://szmap.sanzhisoft.com/cesium-docs/Model.html)
   - 返回值 `this`
 
 ```json
@@ -2334,7 +2334,7 @@ let model = new SzMap.ModelCollectionPrimitive(positions, '**/**.glb')
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[Model](/cesium-docs/Model.html)
+    - `{Object} style`：样式，详情参考：[Model](http://szmap.sanzhisoft.com/cesium-docs/Model.html)
   - 返回值 `this`
 
 ```json
@@ -2390,7 +2390,7 @@ point.setStyle({
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PointGraphics](/cesium-docs/PointGraphics.html)
+    - `{Object} style`：样式，详情参考：[PointGraphics](http://szmap.sanzhisoft.com/cesium-docs/PointGraphics.html)
   - 返回值 `this`
 
 ```json
@@ -2457,7 +2457,7 @@ polyline.setStyle({
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[Polyline](/cesium-docs/Polyline.html)
+    - `{Object} style`：样式，详情参考：[Polyline](http://szmap.sanzhisoft.com/cesium-docs/Polyline.html)
   - 返回值 `this`
 
 ```json
@@ -2602,7 +2602,7 @@ water.setStyle({
   设置样式
 
   - 参数
-    - `{Object} style`：样式，详情参考：[PolygonGraphics](/cesium-docs/PolygonGraphics.html)
+    - `{Object} style`：样式，详情参考：[PolygonGraphics](http://szmap.sanzhisoft.com/cesium-docs/PolygonGraphics.html)
   - 返回值 `this`
 
 ```json

@@ -69,7 +69,7 @@ viewer.addBaseLayer(baseLayer, {
   创建 Arcgis 地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [ArcGis](http://resource.dvgis.cn/cesium-docs/ArcGisMapServerImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [ArcGis](http://szmap.sanzhisoft.com/cesium-docs/ArcGisMapServerImageryProvider.html#.ConstructorOptions)
   - 返回值 `Promise<baseLayer>`
 
 - **_createSingleTileImageryLayer(options)_**
@@ -77,7 +77,7 @@ viewer.addBaseLayer(baseLayer, {
   创建单图片地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [Single](http://resource.dvgis.cn/cesium-docs/SingleTileImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [Single](http://szmap.sanzhisoft.com/cesium-docs/SingleTileImageryProvider.html#.ConstructorOptions)
   - 返回值 `baseLayer`
 
 - **_createWMSImageryLayer(options)_**
@@ -85,7 +85,7 @@ viewer.addBaseLayer(baseLayer, {
   创建 WMS 地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [WMS](http://resource.dvgis.cn/cesium-docs/WebMapServiceImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [WMS](http://szmap.sanzhisoft.com/cesium-docs/WebMapServiceImageryProvider.html#.ConstructorOptions)
   - 返回值 `Promise<baseLayer>`
 
 - **_createWMTSImageryLayer(options)_**
@@ -93,7 +93,7 @@ viewer.addBaseLayer(baseLayer, {
   创建 WMTS 地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [WMTS](http://resource.dvgis.cn/cesium-docs/WebMapTileServiceImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [WMTS](http://szmap.sanzhisoft.com/cesium-docs/WebMapTileServiceImageryProvider.html#.ConstructorOptions)
   - 返回值 `Promise<baseLayer>`
 
 - **_createXYZImageryLayer(options)_**
@@ -101,7 +101,7 @@ viewer.addBaseLayer(baseLayer, {
   创建 X/Y/Z 地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [X/Y/Z](http://resource.dvgis.cn/cesium-docs/UrlTemplateImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [X/Y/Z](http://szmap.sanzhisoft.com/cesium-docs/UrlTemplateImageryProvider.html#.ConstructorOptions)
   - 返回值 `baseLayer`
 
 - **_createCoordImageryLayer(options)_**
@@ -117,7 +117,7 @@ viewer.addBaseLayer(baseLayer, {
   创建网格地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [Grid](http://resource.dvgis.cn/cesium-docs/GridImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [Grid](http://szmap.sanzhisoft.com/cesium-docs/GridImageryProvider.html#.ConstructorOptions)
   - 返回值 `Promise<baseLayer>`
 
 - **_createMapboxImageryLayer(options)_**
@@ -125,7 +125,7 @@ viewer.addBaseLayer(baseLayer, {
   创建 Mapbox 地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [Mapbox](http://resource.dvgis.cn/cesium-docs/MapboxImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [Mapbox](http://szmap.sanzhisoft.com/cesium-docs/MapboxImageryProvider.html#.ConstructorOptions)
   - 返回值 `Promise<baseLayer>`
 
 - **_createMapboxStyleImageryLayer(options)_**
@@ -133,7 +133,7 @@ viewer.addBaseLayer(baseLayer, {
   创建 Mapbox 样式地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [Mapbox Style](http://resource.dvgis.cn/cesium-docs/MapboxStyleImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [Mapbox Style](http://szmap.sanzhisoft.com/cesium-docs/MapboxStyleImageryProvider.html#.ConstructorOptions)
   - 返回值 `Promise<baseLayer>`
 
 - **_createTMSImageryLayer(options)_**
@@ -141,7 +141,7 @@ viewer.addBaseLayer(baseLayer, {
   创建 TMS 地图
 
   - 参数
-    - `{Object} options`：属性，详情参考 [TMS](http://resource.dvgis.cn/cesium-docs/TileMapServiceImageryProvider.html#.ConstructorOptions)
+    - `{Object} options`：属性，详情参考 [TMS](http://szmap.sanzhisoft.com/cesium-docs/TileMapServiceImageryProvider.html#.ConstructorOptions)
   - 返回值 `baseLayer`
 
 - **_createImageryLayer(type, options)_**
