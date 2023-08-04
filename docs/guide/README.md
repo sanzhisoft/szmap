@@ -114,7 +114,7 @@ import '@sanzhisoft/szmap/dist/szmap.min.css'
 
 > `NPM / YARN`
 
-`Webpack` [工程模板](https://github.com/cavencj/dc-vue-app)
+`Webpack`
 
 ```js
 // webpack.config.js
@@ -135,19 +135,21 @@ module.exports = {
 }
 ```
 
+`vite`
+
+```js
+// vite.config.js
+import { defineConfig } from 'vite'
+import SzMap from '@sanzhisoft/vite-plugin-szmap'
+
+export default defineConfig({
+  plugins: [SzMap()]
+})
+```
+
 `CDN`
 
 直接通过[网站](https://github.com/sanzhisoft/szmap/releases)下载当前版本的资源文件
-
-### 代码提示
-
-通过安装代码提示工具包，能够在开发过程中提示和自动完成框架内部的接口，更好地提高开发效率
-
-```shell
-npm install @sanzhisoft/types -D
--------------------------
-yarn add @sanzhisoft/types -D
-```
 
 ### 快速上手
 
@@ -173,9 +175,9 @@ SzMap.ready().then(() => {
 
 ## 总架构图
 
-> SzMap 架构图，建议使用前先熟悉整体架构图，以便能够快速使用。[查看大图](http://szmap.sanzhisoft.com/examples/images/base/szmap.png)
+> SzMap 架构图，建议使用前先熟悉整体架构图，以便能够快速使用。[查看大图](/framework.png)
 
-<img src="http://szmap.sanzhisoft.com/examples/images/base/szmap.png" style="width:100%;height:800px">
+<img src="/framework.png" style="width:500px;height:100%">
 
 ## 技术扩展
 
